@@ -19,6 +19,12 @@
         <div class="menu"></div>
       </div>
     </div>
+    <div class="header bfff">
+      <div><img src="@/assets/logo@1x.png" width="100" alt=""></div>
+      <div @click="isShowMenu = !isShowMenu">
+        <div class="menu"></div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -31,6 +37,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+
   .header {
     position: fixed;
     left: 0;
@@ -106,6 +113,19 @@ export default {
     width: 330px;
     position: absolute;
     z-index: 10000;
+  }
+  .bfff {
+    background-color: #fff;
+    opacity: 0;
+    .menu{
+        background: #999;
+    }
+    .menu::before{
+        background: #999;
+    }
+    .menu::after{
+        background: #999;
+    }
   }
 
 .fade-enter-active, .fade-leave-active {
