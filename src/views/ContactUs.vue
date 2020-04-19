@@ -1,5 +1,6 @@
 <template>
   <div class="about w375">
+    <Header></Header>
     <div class="join-title">上海市虹口区大连路839号
 合生财富广场A座903室</div>
     <div class="about-content">
@@ -15,8 +16,11 @@
   </div>
 </template>
 <script>
-
+import Header from '@/components/Header'
 export default {
+  components: {
+    Header
+  },
 }
 </script>
 <style lang="scss" scoped>
@@ -66,6 +70,7 @@ export default {
     align-items: center;
     justify-content: center;
     padding: 0 65px;
+    margin-top: 20px;
   }
   .join-content {
     background-color: #fff;

@@ -4,8 +4,5 @@
   </div>
 </template>
 <style lang="scss">
-.w375 {
-  width: 375px;
-  margin: 0 auto;
-}
+
 </style>

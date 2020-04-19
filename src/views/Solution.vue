@@ -1,5 +1,6 @@
 <template>
   <div class="about w375">
+    <Header></Header>
     <div class="join-title">安全集成解决方案</div>
     <div class="about-content">
       <img src="@/assets/img_jiejiefa.png" alt="">
@@ -23,16 +24,18 @@
 </div>
     </div>
     <Contact></Contact>
-    <Footer></Footer>
+    <router-link to="/join"><Footer></Footer></router-link>
   </div>
 </template>
 <script>
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 export default {
   components: {
     Contact,
-    Footer
+    Footer,
+    Header
   },
 }
 </script>
@@ -74,6 +77,7 @@ export default {
     font-weight: bold;
     margin-bottom: 5px;
     background-color: #fff;
+    margin-top: 20px;
   }
   .join-content {
     background-color: #fff;

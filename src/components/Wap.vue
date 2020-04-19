@@ -1,6 +1,6 @@
 <template>
   <div class="wap">
-    <Header></Header>
+    <Header isIndex></Header>
     <div class="banner">
       <img src="@/assets/banner.png" alt="">
       <div class="arrow bounce"></div>
@@ -70,7 +70,8 @@
       <a class="more-user">更多客户</a>
       <img class="mt42 row-r" src="@/assets/wap_hezuokehu.png" alt="">
     </div>
-    <Footer></Footer>
+    <router-link to="/about"><Footer></Footer></router-link>
+    
     
     <!-- Swiper -->
   </div>
@@ -107,7 +108,6 @@ export default {
 <style lang="scss" scoped>
 .wap {
   position: relative;
-  width: 375px;
   margin: 0 auto;
   overflow: hidden;
   .cooperative-en {

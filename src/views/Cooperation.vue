@@ -1,5 +1,6 @@
 <template>
   <div class="about w375">
+    <Header></Header>
     <div class="join-title">基金客户</div>
     <div class="about-content">
       <img src="@/assets/img_jijingkehu.png" alt="">
@@ -15,10 +16,12 @@
 <script>
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 export default {
   components: {
     Contact,
-    Footer
+    Footer,
+    Header
   },
 }
 </script>
@@ -59,6 +62,7 @@ export default {
     font-weight: bold;
     margin-bottom: 5px;
     background-color: #fff;
+    margin-top: 20px;
   }
   .join-content {
     background-color: #fff;

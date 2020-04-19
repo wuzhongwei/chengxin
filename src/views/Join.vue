@@ -1,5 +1,6 @@
 <template>
   <div class="about w375">
+     <Header></Header>
     <div class="join-title">.net 软件开发实习生</div>
     <div class="about-content">
       <p class="about-content-title">岗位职责：</p>
@@ -53,16 +54,18 @@
       
     </div>
 <Contact></Contact>
-<Footer></Footer>
+<router-link to="/contactUs"><Footer></Footer></router-link>
   </div>
 </template>
 <script>
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 export default {
   components: {
     Contact,
-    Footer
+    Footer,
+    Header
   },
 }
 </script>
@@ -108,6 +111,7 @@ margin-bottom: 0;
     font-weight: bold;
     margin-bottom: 5px;
     background-color: #fff;
+    margin-top: 20px;
   }
   .join-content {
     background-color: #fff;

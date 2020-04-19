@@ -1,5 +1,6 @@
 <template>
   <div class="about w375">
+    <Header></Header>
     <Chengxing></Chengxing>
     <div class="about-title">金融行业软件及系统集成解决方案提供商</div>
     <div class="about-content">
@@ -21,18 +22,20 @@
 </div>
     </div>
 <Contact></Contact>
-<Footer></Footer>
+<router-link to="/solution"><Footer></Footer></router-link>
   </div>
 </template>
 <script>
 import Chengxing from '@/components/Chengxin'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 export default {
   components: {
     Chengxing,
     Contact,
-    Footer
+    Footer,
+    Header
   },
 }
 </script>
