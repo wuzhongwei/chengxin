@@ -11,7 +11,7 @@ Vue.use(VueRouter)
     component: Home
   },
   {
-    path: '/about',
+    path: '/about', // 关于我们
     name: 'About',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -19,22 +19,22 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/join',
+    path: '/join', // 加入我们
     name: 'Join',
     component: () => import('../views/Join.vue')
   },
   {
-    path: '/cooperation',
+    path: '/cooperation', //合作
     name: 'Cooperation',
     component: () => import('../views/Cooperation.vue')
   },
   {
-    path: '/contactUs',
+    path: '/contactUs', // 联系我们
     name: 'ContactUs',
     component: () => import('../views/ContactUs.vue')
   },
   {
-    path: '/solution',
+    path: '/solution', // 解决方案
     name: 'Solution',
     component: () => import('../views/Solution.vue')
   }

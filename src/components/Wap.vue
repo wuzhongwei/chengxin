@@ -1,5 +1,6 @@
 <template>
   <div class="wap">
+    <Header></Header>
     <div class="banner">
       <img src="@/assets/banner.png" alt="">
       <div class="arrow bounce"></div>
@@ -77,10 +78,17 @@
 <script>
 import Chengxing from './Chengxin'
 import Footer from './Footer'
+import Header from './Header'
 export default {
   components: {
     Chengxing,
-    Footer
+    Footer,
+    Header
+  },
+  methods: {
+    close () {
+
+    }
   },
   mounted () {
     new window.Swiper('.swiper-container', {
@@ -98,8 +106,10 @@ export default {
 
 <style lang="scss" scoped>
 .wap {
+  position: relative;
   width: 375px;
   margin: 0 auto;
+  overflow: hidden;
   .cooperative-en {
     color: #000;
     font-size: 24px;
@@ -230,6 +240,5 @@ export default {
     }
   }
 }
-
 
 </style>

@@ -401,6 +401,9 @@ export default {
     margin-top: 80px;
     padding-top: 165px;
     color: #fff;
+    background-image: url('~@/assets/bj_web756.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
   }
   .warp-h3 {
     font-size: 32px;
