@@ -24,7 +24,7 @@
 </div>
     </div>
     <Contact></Contact>
-    <router-link to="/join"><Footer></Footer></router-link>
+    <router-link to="/cooperation"><Footer></Footer></router-link>
   </div>
 </template>
 <script>
@@ -54,20 +54,22 @@ export default {
   }
   .about-content {
     background-color: #fff;
-    padding: 40px 24px;
-    margin-bottom: 60px;
+    padding: 45px 24px;
+    // margin-bottom: 60px;
   }
 
   .about-content-title {
-    color: #262626;
+    color: #222;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 500;
     margin-top: 45px;
+    
   }
   .about-content-d {
     // margin-bottom: 60px;
     font-size: 13px;
     line-height: 26px;
+    color: #222;
   }
   .join-title {
     color: #000;

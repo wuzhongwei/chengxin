@@ -47,7 +47,7 @@ export default {
     text-align: center;
     color: #000;
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 500;
     background-color: #fff;
     margin-top: 60px;
     margin-bottom: 5px;
@@ -59,12 +59,16 @@ export default {
   .about-content-title {
     color: #262626;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 500;
   }
   .about-content-d {
     margin-bottom: 60px;
     font-size: 13px;
     line-height: 26px;
+    color: #262626;
+  }
+  .about-content-d:last-child {
+    margin-bottom: 0;
   }
 }
 </style>

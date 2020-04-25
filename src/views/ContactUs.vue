@@ -51,12 +51,13 @@ export default {
   .about-content-title {
     color: #262626;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 500;
   }
   .about-content-d {
     // margin-bottom: 60px;
     font-size: 13px;
     line-height: 26px;
+    color: #222;
   }
   .join-title {
     color: #000;

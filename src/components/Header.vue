@@ -1,6 +1,6 @@
 <template>
   <div :class="isIndex ? '' : 'hidde'">
-    <div class="menu-mark" v-show="isShowMenu"></div>
+    <div class="menu-mark" v-show="isShowMenu" @click="isShowMenu = false"></div>
     <transition name="fade">
       <div class="menu-mark-move" v-if="isShowMenu">
         <div class="menu-mark-close"  @click="isShowMenu = !isShowMenu"></div>

@@ -31,7 +31,7 @@
                 <p class="content">全公司共有多项各类技术认证，涵盖IT基础架构的各个方面</p>
             </div>
             <div class="swiper-slide list-item ch-warp">
-              <div class="ch-w">
+              <div class="ch-w" @click="mores">
                 <div class="more-btn"></div>
                 <div>查看更多</div>
               </div>
@@ -51,16 +51,34 @@
       <h2>Solution</h2>
       <p>解决方案</p>
       <div class="jicheng">
-        <img src="@/assets/ing_jichf.png" alt="">
+        <img width="215" src="@/assets/ing_jichf.png" alt="">
       </div>
-      <img class="mt42" src="@/assets/bg1.jpg" alt="">
+      <div class="mt42">
+        <ul class="fangan">
+          <li><img src="@/assets/icon_wangluo.svg" /> <span>网络集成</span></li>
+          <li><img src="@/assets/icon_dashuju.svg" /> <span>私有云解决方案</span></li>
+          <li><img src="@/assets/icon_anquan.svg" /> <span>安全集成</span></li>
+          <li><img src="@/assets/icon_caidan.svg" /> <span>容灾解决方案</span></li>
+          <li><img src="@/assets/icon_xingzhuang.svg" /> <span>大数据集成</span></li>
+          <li><img src="@/assets/icon_yunweizhongxin.svg" /> <span>运维一体化</span></li>
+        </ul>
+      </div>
       <h2 class="mt60">Service Proposal</h2>
       <p>服务方案</p>
       <div class="jicheng">
-        <img src="@/assets/ing_fuwu.png" alt="">
+        <img width="215" src="@/assets/ing_fuwu.png" alt="">
       </div>
-      <img class="mt42" src="@/assets/bg2.jpg" alt="">
-      <img class="mt42" src="@/assets/img_fuwuchennuo.png" alt="">
+      <div class="mt42">
+        <ul class="fuwu">
+          <li><img src="@/assets/icon_xingzhuang.svg" alt="">大数据服务</li>
+          <li><img src="@/assets/icon_Indus.svg" alt="">Linux、Mysql、开源软件服务</li>
+          <li><img src="@/assets/icon_anquan.svg" alt="">安全服务</li>
+          <li><img src="@/assets/icon_weiruan.svg" alt="">微软服务</li>
+          <li><img src="@/assets/icon_wangluo.svg" alt="">网络服务</li>
+          <li><img src="@/assets/icon_siyouyunlan.svg" alt="">虚拟化、云桌面服务</li>
+        </ul>
+      </div>
+      <img class="mt59" src="@/assets/img_fuwuchennuo.png" alt="">
     </div>
     <div class="pr">
       <div class="cooperative-wrap">
@@ -87,6 +105,9 @@ export default {
     Header
   },
   methods: {
+    mores () {
+      this.$router.push('about')
+    },
     close () {
 
     }
@@ -106,6 +127,37 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.fuwu {
+  li {
+    margin-bottom: 27px;
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: 24px;
+    margin-right: 15px;
+  }
+}
+.fangan {
+  overflow: hidden;
+  display: flex;
+  
+  flex-direction: row;
+  flex-wrap: wrap;
+  li {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    margin-bottom: 21px;
+    img {
+      width: 24px;
+      margin-right: 13px;
+    }
+  }
+}
+.mt59 {
+  margin-top: 32px;
+}
 .wap {
   position: relative;
   margin: 0 auto;
@@ -117,7 +169,7 @@ export default {
   }
   .more-user {
     position: absolute;
-    right: 0;
+    right: 24px;
     top: 120px;
 
   }
@@ -137,7 +189,7 @@ export default {
     overflow: hidden;
   }
   .mt60 {
-    margin-top: 60px;
+    margin-top: 37px;
   }
   .mt42 {
     margin-top: 42px;
@@ -216,7 +268,8 @@ export default {
     }
   }
   .jicheng {
-    padding: 0 67px 0 40px;
+    // padding: 0 67px 0 40px;
+    text-align: center;
   }
   .pd20 {
     padding: 48px 0 100px;

@@ -3,9 +3,9 @@
     <div class="banner">
       <div class="logo"></div>
       <div class="banner-content">
-        <h1 class="h1 wow rollIn">科技助力金融</h1>
-        <h2 class="wow bounceInDown">成号科技--可信赖的金融技术服务提供商</h2>
-        <h3 class="wow lightSpeedIn">IT智慧解决方案+IT创新服务</h3>
+        <h1 class="h1">科技助力金融</h1>
+        <h2 class="">成号科技--可信赖的金融技术服务提供商</h2>
+        <h3 class="">IT智慧解决方案+IT创新服务</h3>
         <p class="arrow bounce"></p>
       </div>
     </div>
@@ -13,18 +13,23 @@
       <div class="container">
         <div class="dis">
           <div class="chengxin wow bounceInLeft">—— 诚信、创新、专业、责任、分享 ——</div>
+          <div class="chengli wow bounceInLeft">
+            <p>成立于2011年,</p>
+            <p>注册资本1千万</p>
+            <p>业绩持续快速增长</p>
+          </div>
           <img class="wow bounceInRight" src="@/assets/img_Aboutus.png" alt="">
         </div>
       </div>
     
       <div class="about-us container">
-        <h2 class="wow flipInX">About us</h2>
+        <h2 class="">About us</h2>
         <div class="about-more">
-          <div class="about-l wow swing">关于我们</div>
-          <div class="more wow swing">更多</div>
+          <div class="about-l">关于我们</div>
+          <div class="more" @click="show = !show">更多</div>
         </div>
         <div class="row">
-          <div class="col-4">
+          <div class="col-4" @click="show = !show">
             <div class="box wow rollIn">
               <img src="@/assets/img_Aboutus01.png" alt="">
               <div class="pd10">
@@ -33,7 +38,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4" @click="show = !show">
             <div class="box wow shake">
               <img src="@/assets/img_Aboutus02.png" alt="">
               <div class="pd10">
@@ -42,7 +47,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4" @click="show = !show">
             <div class="box wow swing">
               <img src="@/assets/img_Aboutus03.png" alt="">
               <div class="pd10">
@@ -58,16 +63,16 @@
       <div class="container">
         <h2 class="warp-h2">Solution</h2>
         <div class="warp-tip">
-          <div class="warp-h3 wow bounceInLeft">解决方案</div>
-          <div class="more wow bounceInRight">更多</div>
+          <div class="warp-h3">解决方案</div>
+          <div class="more" @click="show = !show">更多</div>
         </div>
-        <img data-wow-delay="1s" class="mt130 wow bounceInDown" src="@/assets/img_jichengfangan.png" alt="">
+        <img class="mt130 wow fadeIn" src="@/assets/img_jichengfangan.png" alt="">
         <h2 class="warp-h2 mt356">Service Proposal</h2>
         <div class="warp-tip">
-          <div class="warp-h3 wow bounceInLeft">服务方案</div>
-          <div class="more wow bounceInRight">更多</div>
+          <div class="warp-h3">服务方案</div>
+          <div class="more" @click="show = !show">更多</div>
         </div>
-        <img data-wow-delay="1s" class="mt130 wow bounceInDown" src="@/assets/img_fuwufangan.png" alt="">
+        <img class="mt130 wow bounceInRight" src="@/assets/img_fuwufangan.png" alt="">
         <div class="pledge wow bounceInDown">服务承诺</div>
         <div class="row">
           <div class="col-4 pledge-center">
@@ -124,7 +129,7 @@
     </div>
     <div class="cooperative">
       <div class="container">
-        <div class="cooperative-client wow rollIn">
+        <div class="cooperative-client">
           <h2>Cooperative client</h2>
           <h3>合作客户</h3>
         </div>
@@ -178,6 +183,16 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.chengli {
+  font-size: 38px;
+  color: #7d7d7d;
+  position: absolute;
+  top: 130px;
+  left: 0;
+  p {
+    margin: 0;
+  }
+}
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }
