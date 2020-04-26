@@ -15,17 +15,17 @@
       <div class="pd20">
         <div class="swiper-container">
           <div class="swiper-wrapper list">
-            <div class="swiper-slide list-item">
+            <div class="swiper-slide list-item" @click="mores">
               <img class="list-item-img" src="@/assets/wap_aboutus01.png" alt="">
                 <p class="name">团队成员</p>
                 <p class="content">资深技术专家组成的销售和管理团队，成员稳定，金融行业背景丰富</p>
             </div>
-            <div class="swiper-slide list-item">
+            <div class="swiper-slide list-item" @click="mores">
               <img class="list-item-img" src="@/assets/wap_aboutus02.png" alt="">
                 <p class="name">公司资质</p>
                 <p class="content">在网络、云计算、协作通信、信息安全、IT管理等领域， 提供 新IT智慧解决方案 和 综合IT服务</p>
             </div>
-            <div class="swiper-slide list-item">
+            <div class="swiper-slide list-item" @click="mores">
               <img class="list-item-img" src="@/assets/wap_aboutus03.png" alt="">
                 <p class="name">专业化技术认证</p>
                 <p class="content">全公司共有多项各类技术认证，涵盖IT基础架构的各个方面</p>
@@ -51,7 +51,7 @@
       <h2>Solution</h2>
       <p>解决方案</p>
       <div class="jicheng">
-        <img width="215" src="@/assets/ing_jichf.png" alt="">
+        <img class="ml33"  width="215" src="@/assets/ing_jichf.png" alt="">
       </div>
       <div class="mt42">
         <ul class="fangan">
@@ -85,7 +85,7 @@
         <p class="cooperative-en">Cooperative client</p>
         <p class="cooperative-cn">合作客户</p>
       </div>
-      <a class="more-user">更多客户</a>
+      <router-link to="/cooperation" class="more-user">更多客户</router-link>
       <img class="mt42 row-r" src="@/assets/wap_hezuokehu.png" alt="">
     </div>
     <router-link to="/about"><Footer></Footer></router-link>
@@ -127,6 +127,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.ml33 {
+  margin-left: -60px;
+}
 .fuwu {
   li {
     margin-bottom: 27px;
@@ -149,6 +152,7 @@ export default {
     align-items: center;
     width: 150px;
     margin-bottom: 21px;
+    white-space:nowrap;
     img {
       width: 24px;
       margin-right: 13px;
@@ -171,7 +175,7 @@ export default {
     position: absolute;
     right: 24px;
     top: 120px;
-
+    color: #000;
   }
   .cooperative-wrap {
     position: absolute;

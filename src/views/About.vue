@@ -63,7 +63,7 @@ export default {
   }
   .about-content-d {
     margin-bottom: 60px;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 26px;
     color: #262626;
   }
