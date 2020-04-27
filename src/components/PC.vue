@@ -30,7 +30,7 @@
         </div>
         <div class="row">
           <div class="col-4" @click="show = !show">
-            <div class="box wow rollIn">
+            <div class="box wow swing">
               <img src="@/assets/img_Aboutus01.png" alt="">
               <div class="pd10">
                 <div class="name">团队成员</div>
@@ -164,6 +164,7 @@
             <div>上海成号信息科技有限公司是一家专注于为金融行业提供行业应用软件和信息系统集成的综合解决方案提供商，致力于行业业务和技术创新，并力争为行业客户提供最优质的服务，公司客户涉及证券、基金、资管、私募、财富管理、中小贷等多个金融领域。 “诚信、创新、专业、责任、分享”是我们的价值观。</div>
             <p class="mark-box-t">公司介绍</p>
             <div>成立于 2011 年，注册资本1千万，业绩持续快速 增长 基本信息：80%团队成员有长期为金融企业服务的经验，大部分成员都在信息技术行业有10年以上的工作经验及大型项目实施和管理经验。 公司目标：力争成为专业的金融行业应用软件及IT信息解决方案提供商，专注于行业业务和技术创新，并力争为行业客户提供最优质的服务。 公司客户：公司客户涉及证券、基金、信托、资管、私募、财富管理、第三方销售、信贷等多个金融领域。</div>
+            
           </div>
         </div>
       </div>
@@ -183,6 +184,11 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.mark-box-content {
+  overflow: auto;
+  max-height: 500px;
+  padding-right: 36px;
+}
 .chengli {
   font-size: 38px;
   color: #7d7d7d;
@@ -218,7 +224,7 @@ export default {
       border-radius:8px;
       border:5px solid rgba(213,213,213,1);
       background-color: #fff;
-      padding: 40px;
+      padding: 40px 4px 40px 40px;
       color: #222222;
       position: absolute;
       left: 0;
