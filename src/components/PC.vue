@@ -1,15 +1,41 @@
 <template>
   <div class="pc">
-    <div class="banner">
-      <div class="logo"></div>
+    <div class="banner list1">
+      <div class="header">
+        <div class="container fle">
+          <div class="logo"></div>
+          <div class="nav">
+            <ul class="list">
+              <li class="on">首页</li>
+              <li>关于我们</li>
+              <li>解决方案</li>
+              <li>合作客户</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header bfff" ref="bfff">
+        <div class="container fle">
+          <div class="logo1"></div>
+          <div class="nav">
+            <ul class="list">
+              <li class="on">首页</li>
+              <li>关于我们</li>
+              <li>解决方案</li>
+              <li>合作客户</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="banner-content">
         <h1 class="h1">科技助力金融</h1>
         <h2 class="">成号科技--可信赖的金融技术服务提供商</h2>
         <h3 class="">IT智慧解决方案+IT创新服务</h3>
-        <p class="arrow bounce"></p>
+        <p class="arrow bounce" @click="arrowHandle"></p>
       </div>
+      
     </div>
-    <div class="pc-content">
+    <div class="pc-content list1">
       <div class="container">
         <div class="dis">
           <div class="chengxin wow bounceInLeft">—— 诚信、创新、专业、责任、分享 ——</div>
@@ -26,11 +52,11 @@
         <h2 class="">About us</h2>
         <div class="about-more">
           <div class="about-l">关于我们</div>
-          <div class="more" @click="show = !show">更多</div>
+          <!-- <div class="more" @click="show = !show">更多</div> -->
         </div>
         <div class="row">
           <div class="col-4" @click="show = !show">
-            <div class="box wow swing">
+            <div class="box wow bounceInLeft">
               <img src="@/assets/img_Aboutus01.png" alt="">
               <div class="pd10">
                 <div class="name">团队成员</div>
@@ -39,7 +65,7 @@
             </div>
           </div>
           <div class="col-4" @click="show = !show">
-            <div class="box wow shake">
+            <div class="box wow bounceInDown">
               <img src="@/assets/img_Aboutus02.png" alt="">
               <div class="pd10">
                 <div class="name">公司资质</div>
@@ -48,7 +74,7 @@
             </div>
           </div>
           <div class="col-4" @click="show = !show">
-            <div class="box wow swing">
+            <div class="box wow bounceInRight">
               <img src="@/assets/img_Aboutus03.png" alt="">
               <div class="pd10">
                 <div class="name">专业化技术认证</div>
@@ -59,18 +85,18 @@
         </div>
       </div>
     </div>
-    <div class="warp">
+    <div class="warp list1">
       <div class="container">
         <h2 class="warp-h2">Solution</h2>
         <div class="warp-tip">
           <div class="warp-h3">解决方案</div>
-          <div class="more" @click="show = !show">更多</div>
+          <!-- <div class="more" @click="show = !show">更多</div> -->
         </div>
         <img class="mt130 wow fadeIn" src="@/assets/img_jichengfangan.png" alt="">
         <h2 class="warp-h2 mt356">Service Proposal</h2>
         <div class="warp-tip">
           <div class="warp-h3">服务方案</div>
-          <div class="more" @click="show = !show">更多</div>
+          <!-- <div class="more" @click="show = !show">更多</div> -->
         </div>
         <img class="mt130 wow bounceInRight" src="@/assets/img_fuwufangan.png" alt="">
         <div class="pledge wow bounceInDown">服务承诺</div>
@@ -95,7 +121,7 @@
             </div>
           </div>
           <div class="col-4 pledge-center">
-            <div data-wow-delay="0.5s" class="yuan wow rollIn">精细化</div>
+            <div class="yuan wow rollIn">精细化</div>
             <div class="wow bounceInLeft">
               <dl class="pledge-dl">
                 <dt>虚拟化、云桌面服务</dt>
@@ -112,7 +138,7 @@
             </div>
           </div>
           <div class="col-4 pledge-center">
-            <div data-wow-delay="0.5s" class="yuan wow bounceInDown">稳定</div>
+            <div class="yuan wow bounceInDown">稳定</div>
             <div class="wow bounceInLeft">
               <dl class="pledge-dl">
                 <dt>Linux及开源服务</dt>
@@ -127,17 +153,19 @@
         </div>
       </div>
     </div>
-    <div class="cooperative">
+    <div class="cooperative list1">
       <div class="container">
         <div class="cooperative-client">
           <h2>Cooperative client</h2>
           <h3>合作客户</h3>
         </div>
       </div>
-      <img class="r wow bounceInUp" src="@/assets/img_hezuokehu.png" alt="">
+      <div class="center">
+        <img class="wow bounceInUp" src="@/assets/img_hezuokehu.png" alt="">
+      </div>
     </div> 
     <div class="join">
-      <div class="join-btn" @click="show = !show">加入我们</div>
+      <!-- <div class="join-btn" @click="show = !show">加入我们</div> -->
     </div>
     <div class="footer">
       <div class="container fd">
@@ -148,10 +176,10 @@
           <p>邮 编：200127 <br/>电话：＋86 21 50213251 <br/>传真：＋86 21 50213261 <br/>客服邮箱：services@chinahorn.com</p>
           <p>沪公网安备 31010902002731号  沪ICP备15037898号</p>
         </div>
-        <div class="footer-r">
+        <!-- <div class="footer-r">
           <img src="@/assets/img_QRCode.png" alt="">
           <div>扫一扫联系我们</div>
-        </div>
+        </div> -->
       </div>
     </div>
     <transition name="fade">
@@ -178,12 +206,116 @@ export default {
       show: false
     }
   },
+  methods: {
+    init () {
+      let list1 = document.querySelectorAll('.list1')
+      let lists = document.querySelectorAll('.list li')
+      let _this = this
+      lists.forEach((item, index) => {
+        item.onclick = function () {
+          _this.handleMore(list1[index].offsetTop - 100)
+          // console.log(list1[index].offsetTop)
+        }
+      })
+    },
+    arrowHandle () {
+      let pcContent = document.querySelector('.pc-content')
+      let target = pcContent.offsetTop
+      this.handleMore(target)
+    },
+    handleMore (target) {
+      let timer = setInterval(() => {
+        let scrollTop = document.body.scrollTop || document.documentElement.scrollTop
+        let moveTop = scrollTop + 400
+        if (moveTop>=target) {
+          clearInterval(timer)
+          window.scrollTo(0, target);
+        } else {
+          window.scrollTo(0, moveTop);
+        }
+      }, 30);
+    },
+    active () {
+      let bfff = document.querySelectorAll('.bfff .list li')
+      let list1 = document.querySelectorAll('.list1')
+      let scrollTop = document.body.scrollTop || document.documentElement.scrollTop
+      
+      list1.forEach((item, index) => {
+        if (scrollTop > item.offsetTop -110) {
+          bfff.forEach((item) => {
+            item.className = ''
+          })
+          bfff[index].className = 'on'
+        }
+      })
+      
+    }
+  },
   mounted () {
     new window.WOW().init()
+    this.init()
+    this.$nextTick(() => {
+      console.log(this.$refs.bfff)
+    })
+    window.onscroll = () => {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop
+      this.$refs.bfff.style.opacity = scrollTop/100
+      this.active()
+    }
+    
   }
 }
 </script>
 <style lang="scss" scoped>
+.bfff {
+  background-color: #fff;
+  opacity: 0;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 1px 10px 0px rgba(0,0,0,0.5);
+  pointer-events: none;
+}
+
+.fle {
+   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.header {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 0;
+ 
+  height: 100px;
+}
+.nav {
+  .list {
+    display: flex;
+    li {
+      color: #fff;
+      font-size: 24px;
+      margin-right: 40px;
+      cursor: pointer;
+    }
+    li.on {
+      color: #FFDF00;
+    }
+  }
+  
+}
+.bfff {
+  .nav li.on {
+    color: #F04848;
+  }
+  .nav li {
+    color: #999999
+  }
+}
+.center{
+  text-align: center;
+}
 .mark-box-content {
   overflow: auto;
   max-height: 500px;
@@ -327,13 +459,20 @@ export default {
     background-position: top center;
     background-size: cover;
     overflow: hidden;
+    height: 1180px;
     .logo {
-      background-image: url('~@/assets/logo.png');
+      background-image: url('~@/assets/logo_Antiwhite@1x.png');
       background-repeat: no-repeat;
       background-size: cover;
       width: 200px;
       height: 66px;
-      margin: 18px 0 0 76px;
+    }
+    .logo1 {
+      background-image: url('~@/assets/logo@1x.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 200px;
+      height: 66px;
     }
     .banner-content {
       margin-top: 608px;
@@ -492,5 +631,6 @@ export default {
     align-items: center;
   }
 }
+
 
 </style>
