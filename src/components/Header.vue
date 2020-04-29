@@ -16,15 +16,15 @@
     </transition>
     <div class="header" v-if="isIndex">
       <div><img src="@/assets/logo_Antiwhite@1x.png" width="100" alt=""></div>
-      <div class="menu-wrap" @click="isShowMenu = !isShowMenu">
+      <!-- <div class="menu-wrap" @click="isShowMenu = !isShowMenu">
         <div class="menu"></div>
-      </div>
+      </div> -->
     </div>
     <div :class="isIndex ? 'header bfff' : 'header bfff2'" ref="bfff">
       <div><img src="@/assets/logo@1x.png" width="100" alt=""></div>
-      <div class="menu-wrap"  @click="isShowMenu = !isShowMenu">
+      <!-- <div class="menu-wrap"  @click="isShowMenu = !isShowMenu">
         <div class="menu"></div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

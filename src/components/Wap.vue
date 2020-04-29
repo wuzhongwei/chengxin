@@ -87,23 +87,38 @@
         <p class="cooperative-en">Cooperative client</p>
         <p class="cooperative-cn">合作客户</p>
       </div>
-      <router-link to="/cooperation" class="more-user">更多客户</router-link>
+      <!-- <router-link to="/cooperation" class="more-user">更多客户</router-link> -->
       <img class="mt42 row-r" src="@/assets/wap_hezuokehu.png" alt="">
     </div>
-    <router-link to="/about"><Footer></Footer></router-link>
-    
-    
+    <div class="footer">
+			<div class="container fd">
+				<div class="footer-l">
+					<p class="p2">联系我们</p>
+					<p class="p3">上海市虹口区大连路839号合生财富广场A座903室</p>
+					<p class="contact-way">
+						邮 编：200127
+						<br />电话：<a class="highlight" href="tel:21 50213251">＋86 21 50213251</a>
+						<br />传真：＋86 21 50213261
+						<br />客服邮箱：services@chinahorn.com
+					</p>
+					<p class="ab">沪公网安备 31010902002731号 沪ICP备15037898号</p>
+				</div>
+				<!-- <div class="footer-r">
+					<img src="@/assets/img_QRCode.png" alt />
+					<div>扫一扫联系我们</div>
+				</div>-->
+			</div>
+		</div>
+		<!-- <img class="toTop" src="@/assets/wap_toTop.jpg" @click="handleScrollTo" alt=""> -->
     <!-- Swiper -->
   </div>
 </template>
 <script>
 import Chengxing from './Chengxin'
-import Footer from './Footer'
 import Header from './Header'
 export default {
   components: {
     Chengxing,
-    Footer,
     Header
   },
   methods: {
@@ -112,7 +127,14 @@ export default {
     },
     close () {
 
-    }
+    },
+	handleScrollTo() {
+			let t = 0;
+			window.scrollTo({
+				top: t,
+				behavior: 'smooth'
+			});
+		}
   },
   mounted () {
     new window.Swiper('.swiper-container', {
@@ -182,7 +204,7 @@ export default {
   .cooperative-wrap {
     position: absolute;
     left: 24px;
-    top: 76px;
+    top: 46px;
   }
   .cooperative-cn {
     font-size: 17px;
@@ -298,6 +320,45 @@ export default {
       margin: 0 auto 19px;
     }
   }
-}
 
+
+  .footer {
+		background-color: #000;
+		padding: 40px 0 46px;
+		color: #fff;
+
+		.p2 {
+			font-size: 18px;
+			margin-bottom: 15px;
+			text-align:center;
+		}
+		.p3 {
+			font-size: 13px;
+			margin-bottom: 14px;
+		}
+		.fd {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.contact-way{font-size: 12px;}
+		.ab{font-size: 12px;color:#999;}
+		.highlight{color:#007aff;}
+		.footer-r {
+			text-align: center;
+			img {
+				margin-bottom: 14px;
+				display: block;
+			}
+		}
+	}
+
+	// .toTop{
+	// 	position: absolute;
+	// 	bottom: 100px;
+	// 	right: 10px;
+	// 	width: 23px;
+	// 	height:23px;
+	// }
+}
 </style>
