@@ -30,12 +30,14 @@
                 <p class="name">专业化技术认证</p>
                 <p class="content">全公司共有多项各类技术认证，涵盖IT基础架构的各个方面</p>
             </div>
-            <div class="swiper-slide list-item ch-warp" style="display:none;">
+   
+            <!-- <div class="swiper-slide list-item ch-warp">
               <div class="ch-w" @click="mores">
                 <div class="more-btn"></div>
                 <div>查看更多</div>
               </div>
-            </div>
+     
+            </div> -->
           </div>
         </div>
       </div>
