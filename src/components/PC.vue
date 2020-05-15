@@ -458,7 +458,8 @@ export default {
     background-position: top center;
     background-size: cover;
     overflow: hidden;
-    height: 1180px;
+    // height: 1180px;
+	height:100vh;
     .logo {
       background-image: url('~@/assets/logo_Antiwhite@1x.png');
       background-repeat: no-repeat;
@@ -474,9 +475,12 @@ export default {
       height: 66px;
     }
     .banner-content {
-      margin-top: 608px;
       text-align: center;
       color: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
     }
     .h1 {
       font-size: 72px;
